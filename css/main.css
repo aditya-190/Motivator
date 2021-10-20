@@ -67,6 +67,7 @@ body {
 
 .tooltip {
     position: relative;
+    float: right;
     display: inline-block;
 }
 
@@ -80,8 +81,7 @@ body {
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 150%;
-    left: 50%;
+    bottom: 0;
     margin-left: -75px;
     opacity: 0;
     transition: opacity 0.3s;
@@ -90,8 +90,8 @@ body {
 .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
-    top: 100%;
-    left: 50%;
+    top: 50%;
+    left: 100%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
