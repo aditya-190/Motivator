@@ -31,27 +31,30 @@ body {
 }
 
 #startQuote {
-    position: relative;
-    display: flex;
     float: left;
     padding-left: 16px;
     width: 30px;
 }
 
 #copyQuote {
-    position: relative;
-    display: flex;
-    width: 20px;
-    padding-right: 16px;
     float: right;
+    padding-right: 16px;
+    width: 20px;
 }
 
 #endQuote {
-    position: relative;
-    display: flex;
     float: right;
     padding-right: 16px;
     width: 30px;
+}
+
+#quote {
+    margin: auto auto;
+    text-align: center;
+}
+
+#author {
+
 }
 
 /* Snackbar Animations - Starts */

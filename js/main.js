@@ -6,13 +6,6 @@ fetch("https://api.quotable.io/random")
         }
     );
 
-function copyMe() {
-    const copyText = document.getElementById('quote').innerText;
-    navigator.clipboard.writeText(copyText).then(r =>
-        showToast("Quote copied to clipboard.")
-    );
-}
-
 function showToast(message) {
     const snackbar = document.getElementById("snackbar");
     snackbar.className = "show";
@@ -20,4 +13,11 @@ function showToast(message) {
     setTimeout(function () {
         snackbar.className = snackbar.className.replace("show", "");
     }, 3000);
+}
+
+function copyMe() {
+    const copyText = document.getElementById('quote').innerText;
+    navigator.clipboard.writeText(copyText).then(() =>
+        showToast("Quote copied to clipboard.")
+    );
 }
