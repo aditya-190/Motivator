@@ -74,28 +74,19 @@ body {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: black;
+    background-color: #333;
+    margin-right: 8px;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px 10px;
     position: absolute;
     z-index: 1;
     top: -5px;
-    right: 110%;
-}
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    margin-right: 4px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent transparent black;
+    right: 100%;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+    padding: 5px 10px;
 }
