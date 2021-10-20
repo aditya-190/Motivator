@@ -9,6 +9,15 @@ fetch("https://api.quotable.io/random")
 function copyMe() {
     const copyText = document.getElementById('quote').innerText;
     navigator.clipboard.writeText(copyText).then(r =>
-        alert("Quote Copied: " + copyText)
+        showToast("Quote copied to clipboard.")
     );
+}
+
+function showToast(message) {
+    const snackbar = document.getElementById("snackbar");
+    snackbar.className = "show";
+    snackbar.innerText = message;
+    setTimeout(function () {
+        snackbar.className = snackbar.className.replace("show", "");
+    }, 3000);
 }
