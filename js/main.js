@@ -1,10 +1,21 @@
-fetch("https://api.quotable.io/random")
-    .then(data => data.json())
-    .then(obj => {
-            document.getElementById('quote').innerHTML = obj.content;
-            document.getElementById('author').innerHTML = `By - ${obj.author}`;
-        }
+getQuote()
+
+document.getElementById("copyQuote").addEventListener("click", function () {
+    const copyText = document.getElementById('quote').innerText;
+    navigator.clipboard.writeText(copyText).then(() =>
+        showToast("Quote copied to clipboard.")
     );
+})
+
+function getQuote() {
+    fetch("https://api.quotable.io/random")
+        .then(data => data.json())
+        .then(obj => {
+                document.getElementById('quote').innerHTML = obj.content;
+                document.getElementById('author').innerHTML = `By - ${obj.author}`;
+            }
+        );
+}
 
 function showToast(message) {
     const snackbar = document.getElementById("snackbar");
@@ -14,10 +25,3 @@ function showToast(message) {
         snackbar.className = snackbar.className.replace("show", "");
     }, 3000);
 }
-
-document.getElementById("#divId").addEventListener("click", function () {
-    const copyText = document.getElementById('quote').innerText;
-    navigator.clipboard.writeText(copyText).then(() =>
-        showToast("Quote copied to clipboard.")
-    )
-})
