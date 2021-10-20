@@ -15,9 +15,9 @@ function showToast(message) {
     }, 3000);
 }
 
-function copyMe() {
+document.getElementById("#divId").addEventListener("click", function () {
     const copyText = document.getElementById('quote').innerText;
     navigator.clipboard.writeText(copyText).then(() =>
         showToast("Quote copied to clipboard.")
-    );
-}
+    )
+})
