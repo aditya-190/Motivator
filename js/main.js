@@ -9,11 +9,9 @@ fetch("https://api.quotable.io/random")
 function showToast(message) {
     const snackbar = document.getElementById("snackbar");
     snackbar.className = "show";
-    snackbar.style.display = "block";
     snackbar.innerText = message;
     setTimeout(function () {
         snackbar.className = snackbar.className.replace("show", "");
-        snackbar.style.display = "none";
     }, 3000);
 }
 
