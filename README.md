@@ -21,7 +21,7 @@ It's as simple as that! All you have to do is install this extension, click on i
 - Quote author is shown at bottom.
 - New UI enhancement done.
 
-### 🔗 API Used: URL
+## 🔗 API Used: URL
 https://api.quotable.io/random
 
 ## 🌎 Deployed Website:
