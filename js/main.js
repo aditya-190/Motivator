@@ -3,7 +3,7 @@ getQuote()
 document.getElementById("copyQuote").addEventListener("click", function () {
     const copyText = document.getElementById('quote').innerText;
     navigator.clipboard.writeText(copyText).then(() =>
-        showTooltip("Quote copied")
+        showTooltip("Quote copied &#10003;")
     );
 })
 
@@ -18,5 +18,5 @@ function getQuote() {
 }
 
 function showTooltip(message = "Copy to clipboard") {
-
+    document.getElementById("myTooltip").innerHTML = message;
 }
