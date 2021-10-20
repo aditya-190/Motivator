@@ -3,8 +3,8 @@ body {
 }
 
 .container {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     padding: 16px;
     border: 5px solid black;
 }
@@ -26,24 +26,24 @@ body {
     height: fit-content;
     font-style: oblique;
     font-family: 'IM Fell Double Pica', serif;
-    font-size: 24px;
+    font-size: 32px;
     color: #000000;
 }
 
 #startQuote {
     position: relative;
     display: flex;
-    width: 36px;
+    width: 30px;
 }
 
 #endQuote {
     position: relative;
     display: flex;
-    width: 36px;
+    width: 30px;
 }
 
 #copyQuote {
     position: relative;
     display: flex;
-    width: 16px;
+    width: 20px;
 }
