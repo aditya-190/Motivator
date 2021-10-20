@@ -67,7 +67,6 @@ body {
 /* Snackbar Animations - Starts */
 #snackbar {
     display: none;
-    visibility: hidden;
     width: fit-content;
     height: fit-content;
     margin-right: auto;
