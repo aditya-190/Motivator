@@ -5,3 +5,7 @@ fetch("https://api.quotable.io/random")
             document.getElementById('author').innerHTML = `By - ${obj.author}`;
         }
     );
+
+function copyMe() {
+    
+}
