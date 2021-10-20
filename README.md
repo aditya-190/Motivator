@@ -1,17 +1,34 @@
 <h1 align="center">Motivator - Chrome Extension</h1>
 
 <p align="center">
-<img src="URL_GOES_HERE" width="487">
+<img src="https://user-images.githubusercontent.com/63164037/138032449-8d995d34-2de9-407f-9da0-1b7248978677.png" width="441">
 </p>
 
 ## 📜 Description:
-Some Details Goes Here...
+Start every search with motivation. This extension presents you with a motivational quote every time you open or click on it.
 
-## 📽 Sample Demo:
-Sample Video Goes Here...
+"Shower and motivation don't last forever that's why it's recommended daily."
+
+Get a quick and inspirational quote as fast as possible in the comfort of your own browser!
+
+Ever need to get a quick boost in motivation? With this extension, you can get a quick and inspirational quote as fast possible by clicking the Quotes icon in your browser.
+
+It's as simple as that! All you have to do is install this extension, click on it in your chrome browser, and get inspirational and popular quotes from famous people!
+
+**Features:**
+- Copy To Clipboard added.
+- New random motivational quote everytime.
+- Quote author is shown at bottom.
+- New UI enhancement done.
+
+### 🔗 API Used: URL
+https://api.quotable.io/random
 
 ## 🌎 Deployed Website:
-Deployed URL Goes Here...
+https://aditya-190.github.io/Motivator/
+
+## 📽 Sample Demo:
+https://user-images.githubusercontent.com/63164037/138032622-ddcd0511-cfef-4722-87eb-0edb615e3853.mov
 
 ## 🏗 Built With:
  - HTML5
