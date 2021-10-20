@@ -4,7 +4,7 @@ body {
 
 .container {
     width: 400px;
-    height: 400px;
+    height: fit-content;
     padding: 16px;
     border: 5px solid black;
 }
@@ -49,13 +49,16 @@ body {
     text-align: center;
     padding: 16px;
     clear: both;
+    font-style: oblique;
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    color: #000000;
 }
 
 #author {
     text-align: center;
     padding: 16px;
     clear: both;
-    font-style: oblique;
     font-family: 'Poppins', serif;
     font-size: 16px;
     color: #000000;
@@ -63,6 +66,7 @@ body {
 
 /* Snackbar Animations - Starts */
 #snackbar {
+    display: none;
     visibility: hidden;
     width: fit-content;
     height: fit-content;

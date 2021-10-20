@@ -2,10 +2,7 @@ fetch("https://api.quotable.io/random")
     .then(data => data.json())
     .then(obj => {
             document.getElementById('quote').innerHTML = obj.content;
-            let author = `By - ${obj.author}`;
-            let subString = "By -";
-            author.replace(subString, '<b>' + subString + '</b>');
-            document.getElementById('author').innerHTML = author;
+            document.getElementById('author').innerHTML = `By - ${obj.author}`;
         }
     );
 
