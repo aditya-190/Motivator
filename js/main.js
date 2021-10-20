@@ -3,7 +3,7 @@ getQuote()
 document.getElementById("copyQuote").addEventListener("click", function () {
     const copyText = document.getElementById('quote').innerText;
     navigator.clipboard.writeText(copyText).then(() =>
-        showToast("Quote copied to clipboard.")
+        showTooltip("Quote copied")
     );
 })
 
@@ -17,11 +17,6 @@ function getQuote() {
         );
 }
 
-function showToast(message) {
-    const snackbar = document.getElementById("snackbar");
-    snackbar.className = "show";
-    snackbar.innerText = message;
-    setTimeout(function () {
-        snackbar.className = snackbar.className.replace("show", "");
-    }, 3000);
+function showTooltip(message = "Copy to clipboard") {
+
 }
