@@ -7,9 +7,8 @@ fetch("https://api.quotable.io/random")
     );
 
 function copyMe() {
-    let copyText = document.getElementById('quote');
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(copyText.value);
-    alert("Quote Copied2: " + copyText.value);
+    const copyText = document.getElementById('quote').innerText;
+    navigator.clipboard.writeText(copyText).then(r =>
+        alert("Quote Copied: " + copyText)
+    );
 }
