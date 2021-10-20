@@ -1,15 +1,49 @@
-body{
-    width: 300px;
-    height: 300px;
-    display: block;
-    vertical-align: center;
-    background-color: rgb(232, 232, 255);
+body {
+    margin: 0 0;
 }
 
-div{
+.container {
+    width: 300px;
+    height: 300px;
+    padding: 16px;
+    border: 5px solid black;
+}
+
+#logo {
+    position: relative;
+    display: block;
     margin: auto;
-    width: 280px;
+    height: fit-content;
+    width: 60px;
+}
+
+#heading {
+    position: relative;
+    display: block;
     text-align: center;
-    font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin-top: 16px;
+    height: fit-content;
+    font-style: oblique;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 24px;
+    color: #000000;
+}
+
+#startQuote {
+    position: relative;
+    display: flex;
+    width: 36px;
+}
+
+#endQuote {
+    position: relative;
+    display: flex;
+    width: 36px;
+}
+
+#copyQuote {
+    position: relative;
+    display: flex;
+    width: 16px;
 }
