@@ -11,5 +11,5 @@ function copyMe() {
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
-    alert("Quote Copied: " + copyText.value)
+    alert("Quote Copied2: " + copyText.value);
 }
