@@ -10,7 +10,6 @@ body {
 }
 
 #logo {
-    position: relative;
     display: block;
     margin: auto;
     height: fit-content;
@@ -49,8 +48,8 @@ body {
 }
 
 #quote {
-    margin: auto auto;
     text-align: center;
+    clear: both;
 }
 
 #author {
