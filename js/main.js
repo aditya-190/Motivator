@@ -8,12 +8,18 @@ document.getElementById("copyQuote").addEventListener("click", function () {
 })
 
 function getQuote() {
-    fetch("https://api.quotable.io/random")
+    fetch("https://api.api-ninjas.com/v1/quotes", {
+        method: 'GET',
+        headers: {
+            'X-Api-Key': 'xrYJUJOgsJ0nmvtWxp/T5g==KK5BsQ9f9JUP6Qs9'
+        }
+    })
         .then(data => data.json())
+        .then(data => data[0])
         .then(obj => {
-                document.getElementById('quote').innerHTML = obj.content;
-                document.getElementById('author').innerHTML = `By - ${obj.author}`;
-            }
+            document.getElementById('quote').innerHTML = obj.quote;
+            document.getElementById('author').innerHTML = `By - ${obj.author}`;
+        }
         );
 }
 
